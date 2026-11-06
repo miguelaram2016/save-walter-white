@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+/* Retro fan recreation based on SaveWalterWhite.com (2009). */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #1ba11a url('https://raw.githubusercontent.com/matiasroj0/save-walter-white/master/images/tile.png') top left repeat;
+  color: #fff;
+  font-family: "Comic Sans MS", "Comic Neue", cursive;
+  line-height: 1.5;
+}
+.page { width: min(100% - 16px, 700px); margin: 0 auto; text-align: center; }
+.intro h1 {
+  margin: 22px auto 6px;
+  color: #fff;
+  font: bold clamp(3rem, 9vw, 5rem)/1.1 "Times New Roman", Times, serif;
+  white-space: nowrap;
+  letter-spacing: -1px;
+}
+.intro h2 { color: #ffff00; font-size: clamp(1.25rem, 3.2vw, 1.5rem); line-height: 1.25; margin: 0 0 7px; font-weight: 700; }
+.hero-photo {
+  display: block;
+  width: min(53%, 350px);
+  height: auto;
+  border: 8px solid #e4c75d;
+  margin: 0 auto;
+}
+.family-photos { display: flex; align-items: flex-start; justify-content: center; gap: 11px; flex-wrap: nowrap; margin: 18px auto 20px; max-width: 100%; }
+.family-photos img { height: auto; display: block; object-fit: contain; flex-shrink: 1; min-width: 0; }
+.family-photos img:nth-child(1) { width: 18%; }
+.family-photos img:nth-child(2) { width: 18%; }
+.family-photos img:nth-child(3) { width: 18%; }
+.family-photos img:nth-child(4) { width: 27%; }
+.support { padding: 4px 0 18px; }
+.support h3 { margin: 0 0 10px; color: #ffeb14; font-size: 1.25rem; font-weight: 700; }
+.support form { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 7px; }
+.support input { width: 184px; max-width: 100%; padding: 5px 7px; border: 2px inset #dedede; border-radius: 0; background: #fff; color: #111; font: 14px Arial,sans-serif; }
+.support button { font: 14px Arial,sans-serif; padding: 5px 12px; border: 2px outset #ddd; border-radius: 0; background: #e7e7e7; color: #111; cursor: pointer; }
+.support button:hover { background: #fff5ad; }
+.support button:disabled { color: #555; cursor: default; }
+.submitted { min-height: 1.2em; margin: 8px 0 0; color: #ff0; font-weight: 700; }
+.story { text-align: left; font-size: 17px; line-height: 1.47; max-width: 655px; margin: 0 auto; }
+.story p { margin: 17px auto 23px; color: white; text-wrap: pretty; }
+.story p.yellow { color: #ffeb26; font-weight: 700; }
+.appeal { text-align: center; margin: 34px auto 0; font-weight: bold; }
+.appeal-first { font-size: 24px; color: #ffff43; margin: 14px 0 18px; }
+.appeal-second { font-size: 25px; color: #fffc1f; margin: 12px 0 18px; }
+.appeal-third { font-size: 22px; color: #f9e669; margin: 12px 0 24px; }
+.save-banner { display: block; width: min(100%, 540px); height: auto; margin: 10px auto; }
+.donate-art { display: block; width: 210px; max-width: 80%; margin: 20px auto 12px; }
+.donate-art img { width: 100%; height: auto; }
+.donate-art:hover { filter: brightness(1.12); }
+.donation-note { background: #000; color: #fff; padding: 15px 8px; font-size: 20px; margin: 22px 0 0; }
+.count-section { background: #000; padding: 6px 15px 15px; }
+.count-section h2 { font-size: 23px; color: #ff0; margin: 6px 0 14px; }
+.count-section p { font-family: Arial,sans-serif; font-size: 12px; line-height: 1.5; color: #ddd; margin: 0 auto; max-width: 540px; }
+footer { font: 11px/1.6 Arial,sans-serif; text-align: center; color: #ddf8db; padding: 16px 20px 32px; }
+footer p { margin: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 480px) {
+  .page { width: min(100% - 20px,700px); }
+  .intro h1 { font-size: clamp(2.3rem, 10.5vw, 3.25rem); letter-spacing: -0.75px; }
+  .intro h2 { font-size: 1.2rem; }
+  .hero-photo { width: min(70%, 300px); border-width: 6px; }
+  .family-photos { gap: 6px; }
+  .support form { flex-direction: column; }
+  .support input { width: min(300px,100%); }
+  .story { font-size: 16px; line-height: 1.45; }
+  .appeal-first,.appeal-second { font-size: 21px; }
+  .appeal-third { font-size: 19px; }
+  .count-section h2 { font-size: 21px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
