@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#008000">
+  <meta name="description" content="A retro fan recreation of Walter Jr.'s Save Walter White website from Breaking Bad.">
+  <title>Save Walter White</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <h1>Walter White</h1>
+      <h2>Father, Husband &amp; Teacher</h2>
+      <img class="hero-photo" src="https://raw.githubusercontent.com/matiasroj0/save-walter-white/master/images/walter_1.jpg" alt="Walter White smiling in a family photograph" width="400" height="517">
+      <div class="family-photos" aria-label="Family photographs">
+        <img src="https://raw.githubusercontent.com/matiasroj0/save-walter-white/master/images/walter_2.jpg" alt="Walter with a family member" width="249" height="290">
+        <img src="https://raw.githubusercontent.com/matiasroj0/save-walter-white/master/images/walter_3.jpg" alt="Walter holding baby Holly" width="225" height="300">
+        <img src="https://raw.githubusercontent.com/matiasroj0/save-walter-white/master/images/walter_4.jpg" alt="Walter and his son" width="217" height="345">
+        <img src="https://raw.githubusercontent.com/matiasroj0/save-walter-white/master/images/walter_5.jpg" alt="Walter with Skyler and their son" width="364" height="218">
+      </div>
+    </header>
+
+    <section class="support" aria-labelledby="support-title">
+      <h3 id="support-title">Please enter your name to support Walter:</h3>
+      <form id="support-form" autocomplete="on">
+        <label class="sr-only" for="support-name">Your Name</label>
+        <input id="support-name" name="name" maxlength="80" required placeholder="Your Name" autocomplete="name">
+        <label class="sr-only" for="support-email">Your Email (optional)</label>
+        <input id="support-email" name="email" type="email" maxlength="200" placeholder="Your Email (optional)" autocomplete="email">
+        <button type="submit">Submit</button>
+      </form>
+      <p class="submitted" id="submitted" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="story" aria-label="Walter Jr's message about his dad">
+      <p>My dad teaches chemistry at my high school. He is so smart that he'll stop whatever he's doing to explain some odd fact about science. He knows which metals stay liquid at room temperature, why water expands when it freezes, and how chemistry is part of something as simple as making breakfast. Sometimes I pretend it's annoying, but I know how much he loves teaching. He makes everything into a lesson, even at home.</p>
+      <p class="yellow">I have always known my dad was there for our family. I just never really thought about what that meant until he got sick. Suddenly the stuff that used to drive me crazy — reminders to do homework, early weekend mornings, and all his questions about my day — became things I don't ever want to lose. I wish I had appreciated those moments more when everything was normal.</p>
+      <p>It's been a really hard time for us. My little sister Holly was just born, my mom has so much on her mind, and my dad was already working extra hours before we knew about his cancer. Now the bills keep growing. We were never rich, but we always found a way to get by. Dad doesn't like asking anyone for anything. He wants to take care of us himself, even now.</p>
+      <p class="yellow">I don't understand why a family should have to choose between getting someone the treatment they need and paying bills they might never be able to afford. Dad worries about leaving us with debt. What we worry about is losing him. I want Holly to grow up hearing his weird chemistry facts and seeing him at our kitchen table. I want more days with my dad. That's why I made this page.</p>
+    </section>
+
+    <section class="appeal" aria-label="Save Walter White">
+      <p class="appeal-first">What a wonderful dad I have,<br>but he is in trouble.</p>
+      <p class="appeal-second">It's Lung Cancer.<br>He needs an operation. Now!</p>
+      <p class="appeal-third">To help, please keep my Dad<br>in your prayers!</p>
+      <img class="save-banner" src="https://raw.githubusercontent.com/matiasroj0/save-walter-white/master/images/save_walter_banner.png" alt="Save Walter White">
+      <a class="donate-art" href="#support-title" aria-label="Support Walter (fictional signup, no payment)">
+        <img src="https://raw.githubusercontent.com/matiasroj0/save-walter-white/master/images/donate_button.png" alt="Click Here to Donate">
+      </a>
+      <p class="donation-note">ANY AMOUNT WOULD BE APPRECIATED!</p>
+    </section>
+
+    <section class="count-section">
+      <h2>Signups so far: <span id="signup-count">247941</span></h2>
+      <p>This isn't a real fundraising website. It's a fan recreation based on the TV show <em>Breaking Bad</em>. No donations or payments are collected.</p>
+    </section>
+
+    <footer>
+      <p>Unofficial fan tribute. <em>Breaking Bad</em>, its characters, and imagery belong to their respective rights holders. Not affiliated with or endorsed by AMC.</p>
+    </footer>
+  </main>
+</body>
+</html>
